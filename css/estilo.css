@@ -1,6 +1,7 @@
 /* Layout */
 html, body, #home {
     height: 100%;
+    overflow-x: hidden; /* Esconde as barras laterais que excedem a página */
 }
 body {
     background: url(../imagens/capa.png),
@@ -55,16 +56,33 @@ nav.navbar-transparente {
 }
 
 /* Estrutura de conteúdos */
-#servicos {
-    background: #fff;
+.caixa {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+#servicos {
+    background: #fff;
 }
 #servicos h2,h3 {
     color: #7c25f8;
 }
+#recursos {
+    color: #fff;
+}
+#recursos h2 {
+    color: #fff;
+}
+#recursos h3 {
+    color: #9bf0e1;
+}
 .albuns {
     padding: 10px 0;
+}
+.rotacionar {
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    padding-left: 80px;
 }
 
 /* Tipografia */
